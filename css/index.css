@@ -156,6 +156,13 @@ html .container {
   margin-right: 10%;
   margin-bottom: 0;
 }
+@media (max-width: 500px) {
+  html .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 html .container header {
   border-bottom: 10px solid #45BDDC;
   font-family: 'Lato', sans-serif;
@@ -165,6 +172,11 @@ html .container header {
 }
 html .container header .headtext h1 {
   font-size: 40px;
+}
+@media (max-width: 500px) {
+  html .container header .headtext h1 {
+    font-size: 30px;
+  }
 }
 html .container header .headtext p {
   font-size: 14px;
@@ -186,6 +198,11 @@ html .container .topsection nav {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  html .container .topsection nav {
+    display: none;
+  }
 }
 html .container .topsection nav a {
   text-decoration: underline;
@@ -262,6 +279,11 @@ html .container .Skills .skilltext a {
 html .container .Skills img {
   width: 30%;
 }
+@media (max-width: 500px) {
+  html .container .Skills img {
+    display: none;
+  }
+}
 html .container .Exp {
   margin-top: 2.5%;
   display: block;
@@ -275,11 +297,21 @@ html .container .Exp h2 {
   font-size: 35px;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  html .container .Exp h2 {
+    font-size: 30px;
+  }
+}
 html .container .Exp .listcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer {
+    height: 250px;
+  }
 }
 html .container .Exp .listcontainer .jobtitles {
   font-size: 20px;
@@ -294,6 +326,11 @@ html .container .Exp .listcontainer .jobtitles li:nth-child(odd) {
   color: #25a18e;
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobtitles {
+    font-size: 15px;
+  }
+}
 html .container .Exp .listcontainer .jobloca {
   font-size: 20px;
   font-family: 'Lora', serif;
@@ -307,6 +344,11 @@ html .container .Exp .listcontainer .jobloca li:nth-child(odd) {
   color: #25a18e;
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobloca {
+    font-size: 15px;
+  }
+}
 html .container .Exp .listcontainer .jobdesc {
   font-size: 20px;
   font-family: 'Lora', serif;
@@ -319,6 +361,11 @@ html .container .Exp .listcontainer .jobdesc li:nth-child(odd) {
   color: #25a18e;
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobdesc {
+    font-size: 15px;
+  }
+}
 html .container .Interests {
   margin-top: 2.5%;
   display: flex;
@@ -329,6 +376,11 @@ html .container .Interests {
 html .container .Interests h2 {
   font-size: 35px;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  html .container .Interests h2 {
+    margin-bottom: 10px;
+  }
 }
 html .container .Interests .imgcontainer {
   display: flex;
@@ -343,6 +395,25 @@ html .container .Interests .imgcontainer {
 html .container .Interests .imgcontainer img {
   width: 20%;
   height: 100%;
+}
+html .container .Interests .imgcontainer ul {
+  display: none;
+}
+@media (max-width: 500px) {
+  html .container .Interests .imgcontainer {
+    height: 100%;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  html .container .Interests .imgcontainer img {
+    display: none;
+  }
+  html .container .Interests .imgcontainer ul {
+    font-family: 'Lora', serif;
+    color: #b0ffd4;
+    display: block;
+    list-style-type: disc;
+  }
 }
 html .container footer {
   display: flex;

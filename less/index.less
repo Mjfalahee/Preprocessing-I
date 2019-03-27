@@ -121,6 +121,11 @@ html {
 	margin-right: 10%;
 	margin-bottom: 0;
 
+	@media(max-width: 500px) {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 	header 
 	{	
 		border-bottom: @solidborder;
@@ -130,6 +135,9 @@ html {
 		.headtext {
 			h1 {
 				font-size: 40px;
+				@media(max-width: 500px) {
+					font-size: 30px;
+				}
 			}
 			p {
 				font-size: 14px;
@@ -152,11 +160,17 @@ html {
 			width: 60%;
 			display: flex;
 			justify-content: space-evenly;
+			@media(max-width: 500px)
+				{
+					display: none;
+				}
 			a {
 				text-decoration: underline;
 				color: @4color;
 				font-size: 20px;
 				font-family: @lato;
+
+				
 			}
 		}
 	}
@@ -228,6 +242,11 @@ html {
 
 		img {
 			width: 30%;
+
+			@media(max-width: 500px)
+			{
+				display: none;
+			}
 		}
 	}
 
@@ -242,27 +261,48 @@ html {
 			padding-left: 5.9%;
 			font-size: 35px;
 			margin-bottom: 30px;
+
+			
+			@media(max-width: 500px) {
+				font-size: 30px;
+			}
 		}
 		.listcontainer {
 			.flexcenter();
 			justify-content: space-evenly;
 
+			
+			@media(max-width: 500px) {
+				height: 250px;
+			}
 			.jobtitles {
 				.tigerstripes();
 				font-size: 20px;
 				font-family: @lora;
 				margin-right: 5%;
+
+				@media(max-width: 500px) {
+					font-size: 15px;
+				}
 			}
 			.jobloca {
 				.tigerstripes();
 				font-size: 20px;
 				font-family: @lora;
 				margin-right: 5%;
+				
+				@media(max-width: 500px) {
+					font-size: 15px;
+				}
 			}
 			.jobdesc {
 				.tigerstripes();
 				font-size: 20px;
 				font-family: @lora;
+				
+				@media(max-width: 500px) {
+					font-size: 15px;
+				}
 			}
 		}
 	}
@@ -274,6 +314,10 @@ html {
 		h2 {
 			font-size: 35px;
 			margin-bottom: 30px;
+			
+			@media(max-width: 500px) {
+				margin-bottom: 10px;
+			}
 		}
 
 		.imgcontainer {
@@ -286,6 +330,26 @@ html {
 			img {
 				width: 20%;
 				height: 100%;
+			}
+
+			ul {
+				display: none;
+			}
+
+			
+			@media(max-width: 500px) {
+				height: 100%;
+				padding-bottom: 10px;
+				width: 100%;
+				img {
+					display: none;
+				}
+				ul {
+					font-family: @lora;
+					color: @3color;
+					display: block;
+					list-style-type: disc;
+				}
 			}
 		}
 	}
