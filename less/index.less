@@ -57,3 +57,109 @@ html, body {
     height: 100%;
 }
 
+
+html {
+
+// Variables
+	@1color: #45BDDC;
+	@2color: #49d49d;
+	@3color: #b0ffd4;
+	@4color: #25a18e;
+	@backgroundcolor: #00161C;
+
+
+	@solidborder: 10px solid @1color;
+
+	@lora: 'Lora', serif;
+	@lato: 'Lato', sans-serif;
+
+
+// Mix ins
+
+	.flexcenter() {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+// Styling
+
+	background: @1color;
+
+	h1, h2, h3 {
+		color: @2color;
+	}
+
+	p {
+		color: @3color;
+	}
+
+.container {
+
+	background: @backgroundcolor;
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	header 
+	{	
+		border-bottom: @solidborder;
+		font-family: @lato;
+		display: flex;
+		.flexcenter();
+		.headtext {
+
+			h1 {
+				font-size: 40px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+		}
+		img {
+			width: 35%;
+			height: 100%;
+		}
+
+		
+	}
+
+	.topsection {
+		
+		.flexcenter();
+		padding-bottom: 15px;
+		border-bottom: @solidborder;
+		nav {
+			margin-top: 10px;
+			width: 60%;
+			display: flex;
+			justify-content: space-evenly;
+			a {
+				text-decoration: underline;
+				color: @4color;
+				font-size: 20px;
+				font-family: @lato;
+			}
+		}
+	}
+
+	.Intro {
+
+		margin-top: 2.5%;
+		.flexcenter();
+
+
+
+
+	}
+
+}
+
+}
+
+
+
+
