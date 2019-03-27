@@ -142,8 +142,12 @@ html h2,
 html h3 {
   color: #49d49d;
 }
+html h2 {
+  font-family: 'Lato', sans-serif;
+}
 html p {
   color: #b0ffd4;
+  font-family: 'Lora', serif;
 }
 html .container {
   background: #00161C;
@@ -241,6 +245,7 @@ html .container .Skills .skilltext h2 {
 html .container .Skills .skilltext ol {
   width: 100%;
   list-style-type: none;
+  font-size: 20px;
 }
 html .container .Skills .skilltext ol li {
   background: #b0ffd4;
@@ -253,13 +258,56 @@ html .container .Skills img {
 }
 html .container .Exp {
   margin-top: 2.5%;
+  display: block;
+}
+html .container .Exp h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+html .container .Exp .listcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html .container .Exp h2 {
-  font-size: 35px;
-  margin-bottom: 10px;
+html .container .Exp .listcontainer .jobtitles {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  margin-right: 5%;
+}
+html .container .Exp .listcontainer .jobtitles li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobtitles li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobloca {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  margin-right: 5%;
+}
+html .container .Exp .listcontainer .jobloca li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobloca li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobdesc {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+}
+html .container .Exp .listcontainer .jobdesc li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobdesc li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
 }
 html .container .Interests {
   margin-top: 2.5%;

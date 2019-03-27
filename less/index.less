@@ -85,6 +85,18 @@ html {
 		width: 100%;
 	}
 
+	.tigerstripes() {
+		li {
+			color: @3color;
+			line-height: 1.5;
+		}
+		li:nth-child(odd) {
+			color: @4color;
+			line-height: 1.5;
+		}
+
+	}
+
 // Styling
 
 	background: @1color;
@@ -93,8 +105,13 @@ html {
 		color: @2color;
 	}
 
+	h2 {
+		font-family: @lato;
+	}
+
 	p {
 		color: @3color;
+		font-family: @lora;
 	}
 
 .container {
@@ -154,7 +171,6 @@ html {
 			margin: 5%;
 
 			h2 {
-
 				font-size: 35px;
 				margin-bottom: 10px;
 			}
@@ -163,7 +179,6 @@ html {
 			}
 			p {
 				font-size: 20px;
-	
 			}
 		}
 
@@ -194,6 +209,7 @@ html {
 			ol {
 			width: 100%;
 			list-style-type: none;
+			font-size: 20px;
 				li {
 					background: @3color
 				}
@@ -210,10 +226,36 @@ html {
 
 	.Exp {
 		margin-top: 2.5%;
-		.flexcenter();
+		display: block;
 		h2 {
+			width: 100%;
+			text-align: center;
 			font-size: 35px;
-			margin-bottom: 10px;
+			margin-bottom: 30px;
+		}
+
+		.listcontainer {
+			.flexcenter();
+
+			.jobtitles {
+				.tigerstripes();
+				font-size: 20px;
+				font-family: @lora;
+				margin-right: 5%;
+			}
+			.jobloca {
+				.tigerstripes();
+				font-size: 20px;
+				font-family: @lora;
+				margin-right: 5%;
+			}
+			.jobdesc {
+				.tigerstripes();
+				font-size: 20px;
+				font-family: @lora;
+			}
+
+
 		}
 		
 		
