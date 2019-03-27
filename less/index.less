@@ -270,10 +270,23 @@ html {
 	.Interests {
 		margin-top: 2.5%;
 		.flexcenter();
+		flex-direction: column;
 		h2 {
-
 			font-size: 35px;
-			margin-bottom: 10px;
+			margin-bottom: 30px;
+		}
+
+		.imgcontainer {
+			.flexcenter();
+			justify-content: space-evenly;
+			height: 500px;
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: @solidborder;
+			img {
+				width: 20%;
+				height: 100%;
+			}
 		}
 	}
 

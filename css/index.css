@@ -324,10 +324,25 @@ html .container .Interests {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 html .container .Interests h2 {
   font-size: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+html .container .Interests .imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Interests .imgcontainer img {
+  width: 20%;
+  height: 100%;
 }
 html .container footer {
   display: flex;
