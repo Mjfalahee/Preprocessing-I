@@ -67,7 +67,6 @@ html {
 	@4color: #25a18e;
 	@backgroundcolor: #00161C;
 
-
 	@solidborder: 10px solid @1color;
 
 	@lora: 'Lora', serif;
@@ -82,7 +81,9 @@ html {
 		align-items: center;
 	}
 
-
+	.boxwidth() {
+		width: 100%;
+	}
 
 // Styling
 
@@ -97,11 +98,12 @@ html {
 	}
 
 .container {
-
 	background: @backgroundcolor;
 	width: 80%;
-	height: 100%;
 	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 0;
+
 	header 
 	{	
 		border-bottom: @solidborder;
@@ -109,26 +111,22 @@ html {
 		display: flex;
 		.flexcenter();
 		.headtext {
-
 			h1 {
 				font-size: 40px;
 			}
-
 			p {
 				font-size: 14px;
 			}
-
 		}
 		img {
 			width: 35%;
 			height: 100%;
 		}
-
-		
 	}
 
 	.topsection {
 		
+		.boxwidth();
 		.flexcenter();
 		padding-bottom: 15px;
 		border-bottom: @solidborder;
@@ -147,15 +145,93 @@ html {
 	}
 
 	.Intro {
-
 		margin-top: 2.5%;
 		.flexcenter();
+		padding-bottom: 35px;
+		border-bottom: @solidborder;
+		.introtext{
+			width: 400px;
+			margin: 5%;
 
+			h2 {
 
+				font-size: 35px;
+				margin-bottom: 10px;
+			}
+			a {
+				color: @1color;
+			}
+			p {
+				font-size: 20px;
+	
+			}
+		}
 
-
+		img {
+			display: none;
+			width: 30%;
+			height: 100%;
+		}
 	}
 
+	.Skills {
+		margin-top: 2.5%;
+		.flexcenter();
+		flex-direction: row;
+		padding-bottom: 35px;
+		border-bottom: @solidborder;
+		.skilltext {
+			.flexcenter();
+			flex-direction: column;
+			text-align: center;
+			width: 30%;
+			margin-right: 15%;
+			h2 {
+			font-size: 35px;
+			margin-bottom: 10px;
+			}
+
+			ol {
+			width: 100%;
+			list-style-type: none;
+				li {
+					background: @3color
+				}
+				li:nth-child(odd) {
+					background: @4color;
+				}
+			}
+		}
+
+		img {
+			width: 30%;
+		}
+	}
+
+	.Exp {
+		margin-top: 2.5%;
+		.flexcenter();
+		h2 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+		
+		
+	}
+
+	.Interests {
+		margin-top: 2.5%;
+		.flexcenter();
+		h2 {
+
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+	}
+
+	footer {
+
+	}
 }
 
 }

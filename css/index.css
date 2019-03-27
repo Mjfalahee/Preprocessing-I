@@ -148,8 +148,9 @@ html p {
 html .container {
   background: #00161C;
   width: 80%;
-  height: 100%;
   margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
 }
 html .container header {
   border-bottom: 10px solid #45BDDC;
@@ -169,6 +170,7 @@ html .container header img {
   height: 100%;
 }
 html .container .topsection {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,4 +194,80 @@ html .container .Intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Intro .introtext {
+  width: 400px;
+  margin: 5%;
+}
+html .container .Intro .introtext h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+html .container .Intro .introtext a {
+  color: #45BDDC;
+}
+html .container .Intro .introtext p {
+  font-size: 20px;
+}
+html .container .Intro img {
+  display: none;
+  width: 30%;
+  height: 100%;
+}
+html .container .Skills {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Skills .skilltext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin-right: 15%;
+}
+html .container .Skills .skilltext h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+html .container .Skills .skilltext ol {
+  width: 100%;
+  list-style-type: none;
+}
+html .container .Skills .skilltext ol li {
+  background: #b0ffd4;
+}
+html .container .Skills .skilltext ol li:nth-child(odd) {
+  background: #25a18e;
+}
+html .container .Skills img {
+  width: 30%;
+}
+html .container .Exp {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .container .Exp h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+html .container .Interests {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .container .Interests h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
 }
