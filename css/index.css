@@ -253,16 +253,25 @@ html .container .Skills .skilltext ol li {
 html .container .Skills .skilltext ol li:nth-child(odd) {
   background: #25a18e;
 }
+html .container .Skills .skilltext p {
+  margin-top: 10px;
+}
+html .container .Skills .skilltext a {
+  color: #45BDDC;
+}
 html .container .Skills img {
   width: 30%;
 }
 html .container .Exp {
   margin-top: 2.5%;
   display: block;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
 }
 html .container .Exp h2 {
   width: 100%;
-  text-align: center;
+  text-align: start;
+  padding-left: 5.9%;
   font-size: 35px;
   margin-bottom: 30px;
 }
@@ -270,6 +279,7 @@ html .container .Exp .listcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 html .container .Exp .listcontainer .jobtitles {
   font-size: 20px;
@@ -318,4 +328,21 @@ html .container .Interests {
 html .container .Interests h2 {
   font-size: 35px;
   margin-bottom: 10px;
+}
+html .container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html .container footer h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+html .container footer address {
+  color: #b0ffd4;
+  margin-bottom: 5px;
+}
+html .container footer .last {
+  margin-bottom: 30px;
 }

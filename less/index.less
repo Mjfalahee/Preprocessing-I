@@ -217,6 +217,13 @@ html {
 					background: @4color;
 				}
 			}
+			p {
+				margin-top: 10px;
+			}
+
+			a {
+				color: @1color;
+			}
 		}
 
 		img {
@@ -227,15 +234,18 @@ html {
 	.Exp {
 		margin-top: 2.5%;
 		display: block;
+		padding-bottom: 35px;
+		border-bottom: @solidborder;
 		h2 {
 			width: 100%;
-			text-align: center;
+			text-align: start;
+			padding-left: 5.9%;
 			font-size: 35px;
 			margin-bottom: 30px;
 		}
-
 		.listcontainer {
 			.flexcenter();
+			justify-content: space-evenly;
 
 			.jobtitles {
 				.tigerstripes();
@@ -254,11 +264,7 @@ html {
 				font-size: 20px;
 				font-family: @lora;
 			}
-
-
 		}
-		
-		
 	}
 
 	.Interests {
@@ -271,8 +277,25 @@ html {
 		}
 	}
 
+
+
 	footer {
 
+		.flexcenter();
+		flex-direction: column;
+		h2 {
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+
+		address {
+			color: @3color;
+			margin-bottom: 5px;
+		}
+
+		.last {
+			margin-bottom:  30px;
+		}
 	}
 }
 
