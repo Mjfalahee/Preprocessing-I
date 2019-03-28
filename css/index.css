@@ -1,1 +1,434 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  background: #45BDDC;
+}
+html h1,
+html h2,
+html h3 {
+  color: #49d49d;
+}
+html h2 {
+  font-family: 'Lato', sans-serif;
+}
+html p {
+  color: #b0ffd4;
+  font-family: 'Lora', serif;
+}
+html .container {
+  background: #00161C;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  html .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+html .container header {
+  border-bottom: 10px solid #45BDDC;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .container header .headtext h1 {
+  font-size: 40px;
+}
+@media (max-width: 500px) {
+  html .container header .headtext h1 {
+    font-size: 30px;
+  }
+}
+html .container header .headtext p {
+  font-size: 14px;
+}
+html .container header img {
+  width: 35%;
+  height: 100%;
+}
+html .container .topsection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .topsection nav {
+  margin-top: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  html .container .topsection nav {
+    display: none;
+  }
+}
+html .container .topsection nav a {
+  text-decoration: underline;
+  color: #25a18e;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+html .container .Intro {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Intro .introtext {
+  width: 400px;
+  margin: 5%;
+}
+html .container .Intro .introtext h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+html .container .Intro .introtext a {
+  color: #45BDDC;
+}
+html .container .Intro .introtext p {
+  font-size: 20px;
+}
+html .container .Intro img {
+  display: none;
+  width: 30%;
+  height: 100%;
+}
+html .container .Skills {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Skills .skilltext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin-right: 15%;
+}
+html .container .Skills .skilltext h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+html .container .Skills .skilltext ol {
+  width: 100%;
+  list-style-type: none;
+  font-size: 20px;
+}
+html .container .Skills .skilltext ol li {
+  background: #b0ffd4;
+}
+html .container .Skills .skilltext ol li:nth-child(odd) {
+  background: #25a18e;
+}
+html .container .Skills .skilltext p {
+  margin-top: 10px;
+}
+html .container .Skills .skilltext a {
+  color: #45BDDC;
+}
+html .container .Skills img {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  html .container .Skills img {
+    display: none;
+  }
+}
+html .container .Exp {
+  margin-top: 2.5%;
+  display: block;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Exp h2 {
+  width: 100%;
+  text-align: start;
+  padding-left: 5.9%;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  html .container .Exp h2 {
+    font-size: 30px;
+  }
+}
+html .container .Exp .listcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer {
+    height: 250px;
+  }
+}
+html .container .Exp .listcontainer .jobtitles {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  margin-right: 5%;
+}
+html .container .Exp .listcontainer .jobtitles li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobtitles li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobtitles {
+    font-size: 15px;
+  }
+}
+html .container .Exp .listcontainer .jobloca {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  margin-right: 5%;
+}
+html .container .Exp .listcontainer .jobloca li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobloca li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobloca {
+    font-size: 15px;
+  }
+}
+html .container .Exp .listcontainer .jobdesc {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+}
+html .container .Exp .listcontainer .jobdesc li {
+  color: #b0ffd4;
+  line-height: 1.5;
+}
+html .container .Exp .listcontainer .jobdesc li:nth-child(odd) {
+  color: #25a18e;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  html .container .Exp .listcontainer .jobdesc {
+    font-size: 15px;
+  }
+}
+html .container .Interests {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html .container .Interests h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  html .container .Interests h2 {
+    margin-bottom: 10px;
+  }
+}
+html .container .Interests .imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 10px solid #45BDDC;
+}
+html .container .Interests .imgcontainer img {
+  width: 20%;
+  height: 100%;
+}
+html .container .Interests .imgcontainer ul {
+  display: none;
+}
+@media (max-width: 500px) {
+  html .container .Interests .imgcontainer {
+    height: 100%;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  html .container .Interests .imgcontainer img {
+    display: none;
+  }
+  html .container .Interests .imgcontainer ul {
+    font-family: 'Lora', serif;
+    color: #b0ffd4;
+    display: block;
+    list-style-type: disc;
+  }
+}
+html .container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html .container footer h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+html .container footer address {
+  color: #b0ffd4;
+  margin-bottom: 5px;
+}
+html .container footer .last {
+  margin-bottom: 30px;
+}
